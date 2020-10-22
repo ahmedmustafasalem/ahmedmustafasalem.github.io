@@ -4,8 +4,23 @@
   <meta charset="UTF-8">
   <title></title>
   <style>
-      iframe{width:100% !important; height: auto !important;}
+      iframe{width:100% !important;}
   </style>
+  <script>
+       function resizeIFrame(){
+
+var sHeight, frame;
+
+   frame = document.getElementsByTagName("iframe");
+   frame.style.height = '0px';
+   sHeight = document.getElementById('iframe').
+          contentWindow.document.body.scrollHeight + 80;
+   frame.style.height = sHeight + 'px';
+}
+window.addEventListener('load', function () {
+  resizeIFrame()
+})
+  </script>
 </head>
 <body>
     <script src="https://gateway.on24.com/view/orion/content-gateway/embedded/embed.js" data-width="400px" data-height="500px" data-url="https://gateway.on24.com/wcc/eh/2412272/lp/2688074/limagerie-spectrale-dans-la-prise-en-charge-aux-urgences?&hideThumbnails=N&hideAbstract=N&hideDate=N&hideContentType=N&hideContentTypeIcon=N&disableLpForRelatedRecommended=N&showId=2412272&showCode=elitePhilipsElectronicsNederl&source=embedded&mode=launch"></script>
